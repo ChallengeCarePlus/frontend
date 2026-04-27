@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>CarePlus</title>
 </head>
-<body>
-    
+
+<body class="flex flex-col p-4 bg-white">
+    <header class="flex justify-between items-center mb-6">
+        <div class="flex items-center gap-3">
+            <img class="w-12 h-12 rounded-full object-cover" src="./src/assets/imgs/thispersondoesnotexist 1.png"
+                alt="Avatar">
+            <div class="flex flex-col">
+                <p class="font-bold text-lg">Marcos</p>
+                <div class="flex items-center gap-1">
+                    <img class="w-4 h-4" src="./src/assets/svgs/Vector.svg" alt="Ícone de fogo">
+                    <p class="=">3 dias</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-1">
+            <img class="w-6 h-6" src="./src/assets/svgs/spark.svg" alt="Ícone de energia">
+            <p class="=">100</p>
+        </div>
+    </header>
+
+    <main class="mx-auto">
+        <p class="mb-4">Missões diárias:</p>
+        <div class="flex items-center gap-5 mb-8">
+            <img src="./src/assets/svgs/run.svg" class="w-8 h-10">
+            <div class="w-60 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden">
+
+                <div class="w-3/4 h-full bg-green-800"></div>
+
+            </div>
+
+            <p class="">10 km</p>
+        </div>
+        <div class="flex items-center gap-5 mb-8">
+            <img src="./src/assets/svgs/water.svg" class="w-8 h-10">
+            <div class="w-60 flex items-center gap-2">
+                <div class="w-6 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-6 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-6 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-6 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-6 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-6 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-6 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-6 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+
+            </div>
+
+            <p class="w-13 text-center">8 copos</p>
+        </div>
+
+        <div class="flex items-center gap-5 mb-8">
+            <img src="./src/assets/svgs/medi.svg" class="w-8 h-10">
+            <div class="w-60 h-2.5 bg-green-800 rounded-full overflow-hidden">
+
+            </div>
+
+            <p class="w-13 text-center">8 copos</p>
+        </div>
+        <p class="mb-4">Missões semanais:</p>
+        <div class="flex items-center gap-5 mb-8">
+            <img src="./src/assets/svgs/bed.svg" class="w-8 h-8">
+            <div class="w-60 flex items-center justify-between">
+                <div class="w-11 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-11 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-11 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-11 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+                <div class="w-11 h-2.5 border border-green-800 bg-white rounded-full overflow-hidden"></div>
+            </div>
+
+            <p class="w-13 text-center">7 hrs+</p>
+        </div>
+    </main>
 </body>
+
 </html>
