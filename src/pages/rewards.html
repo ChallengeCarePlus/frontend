@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CarePlus</title>
+</head>
+
+<body class="max-w-md mx-auto min-h-screen p-4 flex-1">
+    <header class="flex justify-between items-center mb-6">
+        <div class="flex items-center gap-3">
+            <img class="w-12 h-12 rounded-full object-cover" src="/src/assets/imgs/thispersondoesnotexist 1.png"
+                alt="Avatar">
+            <div class="flex flex-col">
+                <p class="shrink-0 text-[#1C9770] font-bold text-xl">Marcos</p>
+                <div class="flex items-center gap-1">
+                    <img class="w-4 h-4" src="/src/assets/svgs/Vector.svg" alt="Ícone de fogo">
+                    <p class="shrink-0 text-[#1C9770] font-bold text-base">3 dias</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-1">
+            <img class="w-6 h-6" src="/src/assets/svgs/spark.svg" alt="Ícone de energia">
+            <p class="shrink-0 font-bold text-base">100</p>
+        </div>
+    </header>
+
+    <main class="flex flex-col">
+        <p class="mb-4 shrink-0 text-[#1C9770] font-bold text-xl">Destaques da Semana:</p>
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <img src="/src/assets/svgs/boost.svg" height="30" width="30">
+                <div class="flex items-center gap-2">
+                    <p class="text-lg shrink-0 font-bold">Dobro de</p>
+                    <img src="/src/assets/svgs/spark.svg" height="30" width="22">
+                </div>
+            </div>
+            <button
+                class="flex items-center gap-4 py-4 px-8 bg-[#1C9770] rounded-lg shadow-md text-white max-w-xs shrink-0 font-bold text-base">
+                75
+                <span>
+                    <img src="/src/assets/svgs/spark-white.svg" height="30" width="22">
+                </span>
+            </button>
+        </div>
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <img src="/src/assets/svgs/stats.svg" height="30" width="30">
+                <div class="flex items-center gap-2">
+                    <p class="text-lg shrink-0 font-bold">Estatísticas avançadas</p>
+                </div>
+            </div>
+            <button
+                class="flex items-center gap-4 py-4 px-8 bg-[#1C9770] rounded-lg shadow-md text-white max-w-xs shrink-0 font-bold text-base">
+                50
+                <span>
+                    <img src="/src/assets/svgs/spark-white.svg" height="30" width="22">
+                </span>
+            </button>
+        </div>
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-4">
+                <img src="/src/assets/svgs/crossed-streak.svg" height="30" width="30">
+                <div class="flex items-center gap-2">
+                    <p class="text-lg shrink-0 font-bold">Congelar sequência</p>
+                </div>
+            </div>
+            <button
+                class="flex items-center gap-4 py-4 px-8 bg-[#1C9770] rounded-lg shadow-md text-white max-w-xs shrink-0 font-bold text-base">
+                100
+                <span>
+                    <img src="/src/assets/svgs/spark-white.svg" height="30" width="22">
+                </span>
+            </button>
+        </div>
+        <nav
+            class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md flex justify-around items-center bg-white pb-7">
+            <button>
+                <a href="/index.html">
+                    <img src="/src/assets/svgs/home.svg" class="w-auto">
+                </a>
+            </button>
+            <button link="/src/pages/rewards.html">
+                <a href="/src/pages/rewards.html">
+                    <img src="/src/assets/svgs/rewards.svg" class="w-auto">
+                </a>
+            </button>
+            <button>
+                <img src="/src/assets/svgs/settings.svg" class="w-auto">
+            </button>
+        </nav>
+    </main>
+</body>
+
+</html>
