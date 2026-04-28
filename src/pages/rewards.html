@@ -5,93 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>CarePlus</title>
+    <title>CarePlus - Recompensas</title>
 </head>
 
-<body class="max-w-md mx-auto min-h-screen p-4 flex-1">
-    <header class="flex justify-between items-center mb-6">
-        <div class="flex items-center gap-3">
-            <img class="w-12 h-12 rounded-full object-cover" src="/src/assets/imgs/thispersondoesnotexist 1.png"
-                alt="Avatar">
-            <div class="flex flex-col">
-                <p class="shrink-0 text-[#1C9770] font-bold text-xl">Marcos</p>
-                <div class="flex items-center gap-1">
-                    <img class="w-4 h-4" src="/src/assets/svgs/Vector.svg" alt="Ícone de fogo">
-                    <p class="shrink-0 text-[#1C9770] font-bold text-base">3 dias</p>
-                </div>
-            </div>
+<body class="min-h-screen flex flex-col md:flex-row bg-white md:bg-gray-50 text-gray-800">
+    
+    <nav class="fixed bottom-0 left-0 w-full flex justify-around items-center bg-white p-4 border-t border-gray-200 z-50 lg:relative lg:w-64 lg:h-screen lg:flex-col lg:justify-start lg:items-start lg:border-t-0 lg:border-r lg:p-8 lg:gap-6">
+        <div class="hidden lg:block w-full mb-8">
+            <h1 class="text-[#1C9770] font-black text-2xl tracking-tight">CarePlus+</h1>
         </div>
 
-        <div class="flex items-center gap-1">
-            <img class="w-6 h-6" src="/src/assets/svgs/spark.svg" alt="Ícone de energia">
-            <p class="shrink-0 font-bold text-base">100</p>
-        </div>
-    </header>
+        <button class="md:w-full text-left">
+            <a href="/index.html" class="flex items-center gap-4 md:w-full md:p-3 md:hover:bg-gray-100 md:rounded-xl transition-colors">
+                <img src="/src/assets/svgs/home.svg" class="w-6 h-6 md:w-7 md:h-7">
+                <span class="hidden md:block font-bold text-gray-500 text-lg">Início</span>
+            </a>
+        </button>
+        <button class="md:w-full">
+            <a href="/src/pages/rewards.html" class="flex items-center gap-4 md:w-full md:p-3 md:bg-green-50 md:rounded-xl transition-colors">
+                <img src="/src/assets/svgs/rewards.svg" class="w-6 h-6 md:w-7 md:h-7">
+                <span class="hidden md:block font-bold text-[#1C9770] text-lg">Recompensas</span>
+            </a>
+        </button>
+        <button class="md:w-full text-left">
+            <a href="#" class="flex items-center gap-4 md:w-full md:p-3 md:hover:bg-gray-100 md:rounded-xl transition-colors">
+                <img src="/src/assets/svgs/settings.svg" class="w-6 h-6 md:w-7 md:h-7">
+                <span class="hidden md:block font-bold text-gray-500 text-lg">Ajustes</span>
+            </a>
+        </button>
+    </nav>
 
-    <main class="flex flex-col">
-        <p class="mb-4 shrink-0 text-[#1C9770] font-bold text-xl">Destaques da Semana:</p>
-        <div class="flex items-center justify-between mb-4">
-            <div class="flex items-center gap-4">
-                <img src="/src/assets/svgs/boost.svg" height="30" width="30">
-                <div class="flex items-center gap-2">
-                    <p class="text-lg shrink-0 font-bold">Dobro de</p>
-                    <img src="/src/assets/svgs/spark.svg" height="30" width="22">
+    <main class="flex-1 w-full max-w-md mx-auto md:max-w-5xl p-4 pb-24 md:p-10 md:pb-10 overflow-y-auto">
+        
+        <header class="flex justify-between items-center mb-8 md:bg-white md:p-6 md:rounded-2xl md:shadow-sm md:border md:border-gray-100">
+            <div class="flex items-center gap-3">
+                <img class="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover" src="/src/assets/imgs/thispersondoesnotexist 1.png" alt="Avatar">
+                <div class="flex flex-col">
+                    <p class="shrink-0 text-[#1C9770] font-bold text-xl md:text-2xl">Marcos</p>
+                    <div class="flex items-center gap-1">
+                        <img class="w-4 h-4 md:w-5 md:h-5" src="/src/assets/svgs/Vector.svg" alt="Ícone de fogo">
+                        <p class="shrink-0 text-[#1C9770] font-bold text-base md:text-lg">3 dias</p>
+                    </div>
                 </div>
             </div>
-            <button
-                class="flex items-center gap-4 py-4 px-8 bg-[#1C9770] rounded-lg shadow-md text-white max-w-xs shrink-0 font-bold text-base">
-                75
-                <span>
-                    <img src="/src/assets/svgs/spark-white.svg" height="30" width="22">
-                </span>
-            </button>
-        </div>
-        <div class="flex items-center justify-between mb-4">
-            <div class="flex items-center gap-4">
-                <img src="/src/assets/svgs/stats.svg" height="30" width="30">
-                <div class="flex items-center gap-2">
-                    <p class="text-lg shrink-0 font-bold">Estatísticas avançadas</p>
-                </div>
+
+            <div class="flex items-center gap-2 bg-yellow-50 px-4 py-2 rounded-xl">
+                <img class="w-6 h-6 md:w-8 md:h-8" src="/src/assets/svgs/spark.svg" alt="Ícone de energia">
+                <p class="shrink-0 font-black text-xl md:text-2xl text-yellow-600">100</p>
             </div>
-            <button
-                class="flex items-center gap-4 py-4 px-8 bg-[#1C9770] rounded-lg shadow-md text-white max-w-xs shrink-0 font-bold text-base">
-                50
-                <span>
-                    <img src="/src/assets/svgs/spark-white.svg" height="30" width="22">
-                </span>
-            </button>
-        </div>
-        <div class="flex items-center justify-between mb-4">
-            <div class="flex items-center gap-4">
-                <img src="/src/assets/svgs/crossed-streak.svg" height="30" width="30">
-                <div class="flex items-center gap-2">
-                    <p class="text-lg shrink-0 font-bold">Congelar sequência</p>
+        </header>
+
+        <div class="md:bg-white md:p-8 md:rounded-3xl md:shadow-sm md:border md:border-gray-100">
+            <h2 class="mb-8 shrink-0 text-[#1C9770] font-bold text-xl md:text-2xl">Destaques da Semana:</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                
+                <div class="flex items-center justify-between p-4 bg-white md:flex-col md:p-8 md:rounded-2xl border border-gray-100 md:border-gray-200 md:justify-center md:text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 md:flex-col md:mb-6">
+                        <div class="md:bg-green-50 md:p-4 md:rounded-full">
+                            <img src="/src/assets/svgs/boost.svg" class="w-8 h-8 md:w-12 md:h-12">
+                        </div>
+                        <div class="flex items-center gap-2 md:flex-col">
+                            <p class="text-lg md:text-xl shrink-0 font-bold text-gray-800">Dobro de</p>
+                            <img src="/src/assets/svgs/spark.svg" class="w-5 h-7 md:hidden"> 
+                        </div>
+                    </div>
+                    <button class="flex justify-center items-center gap-2 py-3 px-6 md:w-full bg-[#1C9770] hover:bg-green-700 transition-colors rounded-xl text-white font-bold text-base md:text-lg">
+                        75 <img src="/src/assets/svgs/spark-white.svg" class="w-4 h-6">
+                    </button>
                 </div>
+
+                <div class="flex items-center justify-between p-4 bg-white md:flex-col md:p-8 md:rounded-2xl border border-gray-100 md:border-gray-200 md:justify-center md:text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 md:flex-col md:mb-6">
+                        <div class="md:bg-green-50 md:p-4 md:rounded-full">
+                            <img src="/src/assets/svgs/stats.svg" class="w-8 h-8 md:w-12 md:h-12">
+                        </div>
+                        <div class="flex items-center gap-2 md:flex-col">
+                            <p class="text-lg md:text-xl shrink-0 font-bold text-gray-800">Estatísticas avançadas</p>
+                        </div>
+                    </div>
+                    <button class="flex justify-center items-center gap-2 py-3 px-6 md:w-full bg-[#1C9770] hover:bg-green-700 transition-colors rounded-xl text-white font-bold text-base md:text-lg">
+                        50 <img src="/src/assets/svgs/spark-white.svg" class="w-4 h-6">
+                    </button>
+                </div>
+
+                <div class="flex items-center justify-between p-4 bg-white md:flex-col md:p-8 md:rounded-2xl border border-gray-100 md:border-gray-200 md:justify-center md:text-center shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-4 md:flex-col md:mb-6">
+                        <div class="md:bg-green-50 md:p-4 md:rounded-full">
+                            <img src="/src/assets/svgs/crossed-streak.svg" class="w-8 h-8 md:w-12 md:h-12">
+                        </div>
+                        <div class="flex items-center gap-2 md:flex-col">
+                            <p class="text-lg md:text-xl shrink-0 font-bold text-gray-800">Congelar sequência</p>
+                        </div>
+                    </div>
+                    <button class="flex justify-center items-center gap-2 py-3 px-6 md:w-full bg-[#1C9770] hover:bg-green-700 transition-colors rounded-xl text-white font-bold text-base md:text-lg">
+                        100 <img src="/src/assets/svgs/spark-white.svg" class="w-4 h-6">
+                    </button>
+                </div>
+
             </div>
-            <button
-                class="flex items-center gap-4 py-4 px-8 bg-[#1C9770] rounded-lg shadow-md text-white max-w-xs shrink-0 font-bold text-base">
-                100
-                <span>
-                    <img src="/src/assets/svgs/spark-white.svg" height="30" width="22">
-                </span>
-            </button>
         </div>
-        <nav
-            class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md flex justify-around items-center bg-white pb-7">
-            <button>
-                <a href="/index.html">
-                    <img src="/src/assets/svgs/home.svg" class="w-auto">
-                </a>
-            </button>
-            <button link="/src/pages/rewards.html">
-                <a href="/src/pages/rewards.html">
-                    <img src="/src/assets/svgs/rewards.svg" class="w-auto">
-                </a>
-            </button>
-            <button>
-                <img src="/src/assets/svgs/settings.svg" class="w-auto">
-            </button>
-        </nav>
     </main>
 </body>
 
